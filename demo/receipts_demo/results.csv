@@ -1,0 +1,2 @@
+accuracy,dataset_rows,precision,recall,training_time
+91.8,10000,0.80,0.80,20

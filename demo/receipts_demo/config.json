@@ -1,0 +1,7 @@
+{
+  "model_name": "LogisticRegression",
+  "training": {
+    "training_epochs": 25
+  },
+  "random_seed": 42
+}
