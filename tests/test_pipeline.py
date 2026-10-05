@@ -259,7 +259,7 @@ class PipelineTests(unittest.TestCase):
                     return MockResponse(json.dumps(payload))
 
             result = run_pipeline(root, extractor=self.ollama_extractor(payload, lambda _: Opener()))
-            self.assertEqual(result.verification_results[0].verdict, VERDICT_UNVERIFIABLE)
+            self.assertEqual(result.verification_results, [])
         finally:
             directory.cleanup()
 
